@@ -1,0 +1,21 @@
+.photo{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+}
+.block{
+    color: #fff; 
+    padding: 10px; 
+    border-radius: 5px; 
+    border: 2px solid black;
+}
+.country{
+    text-align: right;
+}
+.city{
+    text-align: right;
+}
+
+.selectedPage{
+    font-weight: bold;
+}
