@@ -1,0 +1,31 @@
+.postForm {
+    width: 600px;
+    height: 40px;
+    background: #EDF1FF;
+    border-radius: 0px 0px 0px 20px;
+    font-size: 30px;
+    padding-left: 30px;
+    resize: none;
+    border: none;
+}
+
+.postFormDiv {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.imgSendingPost {
+    width: 34px;
+    height: 34px;
+}
+
+.buttonSendingPost {
+    left: 850px;
+    top: 591px;
+    height: 44px;
+    border-radius: 0px 0px 20px;
+    border: none;
+    background-color: white;
+}

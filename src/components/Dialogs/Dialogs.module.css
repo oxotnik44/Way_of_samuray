@@ -1,22 +1,15 @@
-.dialogs {
-    display: grid;
-    grid-template-columns: 2fr 10fr;
+.dialogsField {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 10px;
 }
 
-.dialog {
-    padding: 10px;
+.imgUsers {
+    border-radius: 40px;
+    width: 60px;
+    height: 60px;
 }
+
 .dialogsItem .active {
     color: gold;
-}
-.messeges {
-    
-}
-
-.message {
-    padding: 10px;
-
-}
-.item img{
-    width: 50px;
 }

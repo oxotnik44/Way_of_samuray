@@ -1,17 +1,22 @@
 .app-wrapper {
   display: grid;
-
+  height: 100vh;
   grid-template-areas:
-    "header header header"
-    "nav content content";
-  grid-template-rows: 60px 1fr;
-  grid-template-columns: 2fr 10fr;
+    "header header header header"
+    "void nav content void-left";
+  grid-template-rows: 80px;
+  grid-template-columns: 200px 250px auto 200px;
 
 }
 
 .app-wrapper-content {
-
   grid-area: content;
-  background-color: goldenrod;
+  background-color: #D9D9D9;
+}
+
+.app-wrapper-void {
+  grid-area: void;
+  background-color: #D9D9D9;
 
 }
+

@@ -1,0 +1,40 @@
+.postForm {
+    width: 800px;
+    height: 40px;
+    background: #EDF1FF;
+    border-radius: 0px 0px 0px 20px;
+    font-size: 30px;
+    padding-left: 30px;
+    resize: none;
+    border: none;
+}
+
+.messageFormDiv {
+    display: flex;
+}
+
+.imgSendingMessage {
+    width: 35px;
+    height: 35px;
+}
+
+.buttonSendingMessage {
+    left: 850px;
+    top: 591px;
+    height: 44px;
+    width: 45px;
+    border-radius: 0px 0px 20px;
+    border: none;
+    background-color: white;
+}
+
+.imgLoupeDiv {
+    background-color: #EDF1FF;
+    height: 44px;
+    width: 45px;
+}
+
+.imgLoupe {
+    height: 40px;
+    width: 40px;
+}
