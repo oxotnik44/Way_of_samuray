@@ -6,7 +6,6 @@ const Profile = (props) => {
   return (
     <div>
       <div>
-      
         <ProfileInfo
           auth={props.auth}
           profile={props.profile}

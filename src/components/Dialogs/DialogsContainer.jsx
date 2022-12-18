@@ -7,7 +7,6 @@ import { withAuthRedirect } from "../hoc/withAuthRedirect";
 import Dialogs from "./Dialogs";
 class DialogsContainer extends React.Component {
   render() {
-    if (!this.props.isAuth) return <Navigate to="/login" />;
     return (
       <Dialogs
         sendMessage={this.props.sendMessage}

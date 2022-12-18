@@ -5,6 +5,7 @@ import { required } from "../../utils/validators/validators";
 import { Input } from "../FormControls/FormsControls";
 import { login } from "./../../redux/reducer/auth-reducer";
 import s from "./../FormControls/FormsControls.module.css";
+import style from "./Login.module.css";
 const LoginForm = (props) => {
   return (
     <form onSubmit={props.handleSubmit}>
@@ -14,6 +15,7 @@ const LoginForm = (props) => {
           component={Input}
           placeholder={"Email"}
           validate={[required]}
+          className={style.loginInput}
         />
       </div>
       <div>
@@ -23,15 +25,21 @@ const LoginForm = (props) => {
           placeholder={"Password"}
           validate={[required]}
           type={"password"}
+          className={style.loginInput}
         />
       </div>
-      <div>
-        <Field name={"rememberMe"} component={Input} type={"checkbox"} />
-        rememberMe
+      <div className={style.rememberMeBlock}>
+        <Field
+          name={"rememberMe"}
+          component={Input}
+          type={"checkbox"}
+          className={style.rememberMe}
+        />
+        <div className={style.rememberMeText}>REMEMBER ME</div>
       </div>
       {props.error && <div className={s.formError}>{props.error}</div>}
       <div>
-        <button>Auth</button>
+        <button className={style.authButton}>LOG IN</button>
       </div>
     </form>
   );
@@ -49,8 +57,9 @@ const Login = (props) => {
     return <Navigate to={`/profile/${props.userId}`} />;
   } else {
     return (
-      <div>
-        <h1>Login</h1>
+      <div className={style.loginForm}>
+        <div className={style.appName}>APP NAME</div>
+        <div className={style.imgLogo}></div>
         <LoginReduxForm onSubmit={onSubmit} />
       </div>
     );
